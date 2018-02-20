@@ -14,7 +14,8 @@ public class Test {
 ApplicationContext context=new ClassPathXmlApplicationContext("ApplicationContext.xml");
 EmployeeDao dao=(EmployeeDao)context.getBean(EmployeeDao.class);
 boolean b=dao.saveEmployee(new Employee(1,"kuppaiah",98989.90f));
-System.out.println(b);
+System.out.println(b+"");
+System.out.println("hi devaraju kuppaiah");
 List<Employee> e=dao.getAllEmployee();
 for(Employee ee:e)
 {
